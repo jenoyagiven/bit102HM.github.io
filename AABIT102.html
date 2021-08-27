@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bit102AA</title>
+    <style>
+      body {
+        padding: 50px;
+      }
+      div#a{background-color: aqua;}
+      
+      div {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background: #c40c0c;
+        animation: leftRight;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        border-radius: 25px;
+        resize: horizontal;
+        overflow: auto;
+
+        font-family: newFont;
+        cursor:crosshair
+      }
+
+      #a:hover {
+        background: #ccc;
+      }
+
+      @keyframes leftRight {
+        0% {
+          left: 0px;
+        }
+        50% {
+          left: 200px;
+        }
+        100% {
+          left: 0px;
+        }
+      }
+
+      @font-face {
+        font-family: newFont;
+        src: url(Akira\ Expanded\ Demo.otf);
+      }
+    </style>
+  </head>
+  <body>
+    <span class="xlink">
+    <div id="a">
+      <p>Testing Font</p>
+    </div>
+  </body>
+</html>
